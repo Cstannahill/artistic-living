@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
 
-module.exports = nextConfig
+const nextConfig = {
+  env: {
+    testKey: `AB-${Math.random(12002)}`,
+  },
+};
+
+module.exports = nextConfig;
